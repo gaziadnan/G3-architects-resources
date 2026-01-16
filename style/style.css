@@ -2,17 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.fonts {
+.fonts{
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin: 0 auto;
 }
-*{
-    margin: 0 auto;  /*  opor niche 0 bam dan a auto */
 
-}
-/* shared items */
+
+
 .flex{
     display: flex;
 }
@@ -25,7 +24,13 @@
     padding: 21px 24px 20px 25px;
     border-radius: 8px;
     border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
 
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .text-gray{
@@ -39,39 +44,117 @@
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1) ;
 }
-
-/* nav-bar */
-
 .navbar{
+    
+    align-items: center;
     justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.nav-links li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
 }
 .brand{
     font-weight: 700;
-    font-size: ;
+    font-size:3rem ;
 }
 
-.nav-links{
 
-    list-style: none;
-    gap: 30px;
-    /* justify-content: space-between;
-    max-width:477px ;
-    width: 100%;     */
-   
+/* banner style */
+
+.banner{
+    /* margin-top: 100px; */
+    max-width: 1440px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
     
 }
-.nav-link{
-    gap: 30px;
-    /* margin-right: 30px; */
+.banner h1{
+    font-weight:700;
+    font-size: 4rem;
+    color: #131313;
+    margin-bottom: 32px;
+
 
 }
-.nav-link{
-    text-decoration: none;
-  
-    font-weight: 500 ;
-}
-.navbar .banner{
-    max-width: 1440px;
+.banner p{
+    line-height: 26px;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+
 }
 
-.banner
+.banner img{
+    width: 100%;
+    max-width:1440px ;
+} 
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.banner-img{
+    width:100%;
+}
+
+
+
+/* team section */
+
+.team{
+    align-items: center;
+    margin-bottom:24px ;
+   padding: 60px;
+}
+.team-freature h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #727272;
+
+
+
+}
+.team-span1{
+    color: #727272;
+}
+.team-span2{
+    color: #FF900E;
+}
+
+.team-freature p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+    line-height: 26px;
+    
+}
+
+.team-feature{
+    margin-left:73px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+
+
+/* media query */
+@media  screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    
+}
